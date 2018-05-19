@@ -1,0 +1,22 @@
+﻿$(document).ready(function () {
+    $("#txtCPF").mask("999.999.999-99");
+    $("#txtCPFCliF").mask("999.999.999-99");
+    $("#txtRg").mask("99.999.999-9");
+    $("#txtCnpj").mask("99.999.999/9999-99");
+    $("#txtCnpjCliJu").mask("99.999.999/9999-99");
+    $("#txtDataNascimento").mask("99/99/9999");
+    $("#txtData").mask("99/99/9999");
+    $("#txtDataCadastro").mask("99/99/9999");
+    $("#txtDataProcesso").mask("99/99/9999");
+    $("#txtDataNascimentoCliF").mask("99/99/9999");
+    $("#txtCelularCliF").mask("(99) 99999-9999");
+    $("#txtTelefoneCliF").mask("(99) 9999-9999");
+    $("#txtCelularCliJu").mask("(99) 99999-9999");
+    $("#txtTelefoneCliJu").mask("(99) 9999-9999");
+    $("#txtRgCliF").mask("99.999.999-9");
+    $("#txtHoraProcesso").mask("99:99");
+    $("#txtHora").mask("99:99");
+    $("#txtTelefone").mask("(99) 9999-9999");
+    $("#txtCelular").mask("(99) 99999-9999");
+    $("#txtCEP").mask("99999-999");
+});

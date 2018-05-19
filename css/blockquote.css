@@ -1,0 +1,31 @@
+﻿/*BLOCKQUOTE*/
+blockquote {
+    background-color:#fafafa;
+    color: #768399;
+    text-align: justify;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+    blockquote:hover {
+        top: -10px;
+        box-shadow: 0 4px 3px #999;
+    }
+.block-primary{
+    border-left: 8px solid #2d58b0;
+}
+.block-success{
+    border-left: 8px solid #36b535;
+}
+.block-danger{
+    border-left: 8px solid #ff0000;
+}
+.block-warning{
+    border-left: 8px solid #ff6a00;
+}
+
+/*FIM BLOCKQUOTE*/

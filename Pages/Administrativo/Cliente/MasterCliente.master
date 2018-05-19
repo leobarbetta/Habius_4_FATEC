@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterCliente.master.cs" Inherits="Pages_Administrativo_MasterCliente" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="shortcut icon" href="../../../Images/logo.ico" />
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../../css/print.css" rel="stylesheet" media="print" />
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../css/metro.min.css" rel="stylesheet" />
+    <link href="../../../css/metro-icons.min.css" rel="stylesheet" />
+    <link href="../../../css/metro-responsive.min.css" rel="stylesheet" />
+    <link href="../../../css/metro-rtl.min.css" rel="stylesheet" />
+    <link href="../../../css/metro-schemes.min.css" rel="stylesheet" />
+
+
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<script src="../../../JavaScript/jquery-1.11.3.js"></script>
+<script src="../../../JavaScript/jquery.validate.js"></script>
+<script src="../../../JavaScript/bootstrap.min.js"></script>
+<script src="../../../JavaScript/metro.js"></script>
+<script src="../../../JavaScript/metro.min.js"></script>
+<script src="../../../JavaScript/appbar.js"></script>
+<script src="../../../JavaScript/fluentmenu.js"></script>
+<script src="../../../JavaScript/jquery-1.2.6.pack.js"></script>
+<script src="../../../JavaScript/jquery.maskedinput-1.1.4.pack.js"></script>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="true"></asp:ScriptManager>
+        <div class="container-fluid">
+
+            <header>
+                <section id="menu" class="no-print">
+
+                    <div id="app-bar" class="app-bar navy" data-role="appbar">
+
+                        <a class="app-bar-element" style="text-decoration: none" href="../../../Pages/Administrativo/Advogado/HomeAdvogado.aspx">Habius</a>
+
+                        <span class="app-bar-divider"></span>
+
+                        <ul class="app-bar-menu">
+                            <li><a href="HomeCliente.aspx">Home</a></li>
+                        </ul>
+                        <ul class="app-bar-menu place-right">
+                            <li><a><span class="mif-cog icon fg-white"></span>
+                                <asp:Label ID="lblUsuarioAtivo" runat="server" Text="[User]"></asp:Label></a>
+                                <ul class="d-menu place-right" data-role="dropdown">
+                                    <li><a href="../../../Pages/Administrativo/Cliente/EditarMeusDados.aspx"><span class="mif-pencil icon fg-grayLight"></span>Editar Perfil</a></li>
+                                    <%--<li><a href="#"><span class="mif-mail icon fg-grayLight"></span>Mensagens&nbsp&nbsp&nbsp&nbsp&nbsp<span class="badge" style="background-color: #ffffff; color: #208fd9"><asp:Label ID="lblBadge" runat="server" Text="0"></asp:Label></span></a></li>--%>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <asp:LinkButton ID="lbtnLogout" OnClick="lbtnLogout_Click" runat="server"><span class="mif-exit icon fg-grayLight"></span>Logout</asp:LinkButton>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="app-bar-divider place-right"></div>
+                    </div>
+
+                </section>
+            </header>
+
+            <section class="corpo">
+                <div class="row">
+                    <div role="main" class="col-md-12">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="text-center">Habius Software Para Advocacia</footer>
+
+        </div>
+    </form>
+</body>
+</html>
